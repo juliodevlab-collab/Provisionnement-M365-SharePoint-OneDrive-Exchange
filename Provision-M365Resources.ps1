@@ -1,3 +1,5 @@
+ # Set-MgUserLicense -UserId $userId -AddLicenses @{SkuId="c7df2760-2c53-4c64-a3f1-3b1c0f6f5a1c"}
+
 Import-Csv -Path "./users.csv" | ForEach-Object {
 
     $userId = $_.UserPrincipalName
